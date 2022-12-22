@@ -20,10 +20,10 @@
 
         Default {
             bindings = <
-          &kp ESC         &kp Q   &kp W   &kp E   &kp R      &kp T   &kp Y   &kp U     &kp I    &kp O      &kp P   &kp BSPC  &kp C_PLAY_PAUSE
-          &kp TAB         &kp A   &kp S   &kp D   &kp F      &kp G   &kp H   &kp J     &kp K    &kp L  &kp ENTER
-        &kp LSHFT         &kp Z   &kp X   &kp C   &kp V      &kp B   &kp N   &kp M     &mo 1  &kp DOT     &kp UP
- &kp LEFT_CONTROL  &kp LEFT_ALT                          &kp SPACE                  &kp LEFT            &kp DOWN  &kp RIGHT
+          &kp ESC         &kp Q   &kp W   &kp E   &kp R      &kp T   &kp Y   &kp U     &kp I         &kp O      &kp P   &kp BSPC  &kp C_PLAY_PAUSE
+          &kp TAB         &kp A   &kp S   &kp D   &kp F      &kp G   &kp H   &kp J     &kp K         &kp L  &kp ENTER
+        &kp LSHFT         &kp Z   &kp X   &kp C   &kp V      &kp B   &kp N   &kp M     &mo 1  &kp QUESTION     &kp UP
+ &kp LEFT_CONTROL  &kp LEFT_ALT                          &kp SPACE                  &kp LEFT                 &kp DOWN  &kp RIGHT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -31,10 +31,10 @@
 
         Modifier_1 {
             bindings = <
-   &kp TILDE2  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp MINUS  &rgb_ug RGB_TOG
-       &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans     &kp EQUAL
-     &kp CAPS  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_NXT    &bt BT_PRV    &bt BT_CLR        &trans   &bootloader        &trans
- &kp LEFT_WIN         &kp Z                                                  &trans                                    &trans                      &trans     &trans
+     &kp TILDE2  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9   &kp NUMBER_0       &kp MINUS  &rgb_ug RGB_TOG
+         &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &kp F6        &kp F7        &kp F8        &kp F9       &kp F10      &kp EQUAL
+ &kp LEFT_SHIFT  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_NXT    &bt BT_PRV    &bt BT_CLR        &trans   &bootloader        &kp DOT
+   &kp LEFT_WIN         &kp Z                                                   &mo 2                                 &kp COMMA                &kp SEMICOLON  &kp APOSTROPHE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -42,10 +42,10 @@
 
         Modifier_2 {
             bindings = <
- &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans                          &trans                  &trans          &trans  &trans
+                         &trans  &rgb_ug RGB_HUI  &rgb_ug RGB_HUD                 &rgb_ug RGB_SAI                  &rgb_ug RGB_SAD                            &trans                            &trans                            &trans  &trans                            &trans  &trans  &trans  &trans
+                         &trans  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD                 &rgb_ug RGB_SPI                  &rgb_ug RGB_SPD                            &trans                            &trans                            &trans  &trans                            &trans  &trans
+ &rgb_ug RGB_COLOR_HSB(0,30,97)  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_COLOR_HSB(0,95,49)  &rgb_ug RGB_COLOR_HSB(52,97,49)  &rgb_ug RGB_COLOR_HSB(127,97,49)  &rgb_ug RGB_COLOR_HSB(180,98,49)  &rgb_ug RGB_COLOR_HSB(239,97,50)  &trans  &rgb_ug RGB_COLOR_HSB(296,97,49)  &trans
+                         &trans           &trans                                                                                                              &trans                                                                      &trans                                    &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
